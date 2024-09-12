@@ -1,5 +1,20 @@
-import Image from "next/image";
-
+import { FaMoon } from "react-icons/fa";
 export default function Home() {
-  return <h1 className=" bg-red-400">hello</h1>;
+  return (
+    <main>
+      <section>
+        <nav>
+          <h1>Develop b atomic arts</h1>
+          <ul>
+            <li>
+              <FaMoon />
+            </li>
+            <li>
+              <a href="">Resume</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+  );
 }
