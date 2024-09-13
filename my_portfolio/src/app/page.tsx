@@ -12,10 +12,10 @@ import image3 from "./public/web3.png";
 
 export default function Home() {
   return (
-    <main className=" bg-yellow-50 min-h-screen px-10">
+    <main className=" bg-yellow-50 min-h-screen px-10 md:px-20 lg:px-40">
       <section>
         <nav className=" py-10 flex justify-between">
-          <h1 className=" text-sm">Develop b atomic arts</h1>
+          <h1 className=" text-sm md:text-xl">Develop b atomic arts</h1>
           <ul className=" flex items-center">
             <li>
               <FaMoon className=" cursor-pointer text-xl mx-5" />
@@ -33,11 +33,11 @@ export default function Home() {
         </nav>
         {/* {this is hero part} */}
         <div className=" text-center p-10">
-          <h1 className=" text-5xl font-bold text-yellow-400">
+          <h1 className=" text-5xl font-bold text-yellow-400 md:text-6xl lg:text-7xl lg:mb-4">
             Akila Umayanga
           </h1>
-          <h3 className="text-2xl py-4">Software Developer</h3>
-          <p className=" text-sm py-4 text-gray-400 leading-6">
+          <h3 className="text-2xl py-4 md:text-3xl">Software Developer</h3>
+          <p className=" text-sm py-4 text-gray-400 leading-6 max-w-xl mx-auto">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure fuga
             dolor dicta quos, optio sequi facilis sint explicabo neque
             architecto maxime incidunt ducimus quidem, mollitia tenetur
@@ -77,7 +77,7 @@ export default function Home() {
           </p>
         </div>
         {/* services card */}
-        <div>
+        <div className=" md:flex lg:flex gap-10 mx-auto">
           {/* card */}
           <div className=" bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
             <Image
@@ -137,47 +137,59 @@ export default function Home() {
             distinctio. Repellat, quidem itaque.
           </p>
         </div>
-        <div className=" flex flex-col gap-10 p-10">
-          <Image
-            src={image1}
-            alt="image1"
-            layout="responsive"
-            className=" rounded-lg object-cover"
-          />
-          <Image
-            src={image1}
-            alt="image1"
-            layout="responsive"
-            className=" rounded-lg object-cover"
-          />
-          <Image
-            src={image1}
-            alt="image1"
-            layout="responsive"
-            className=" rounded-lg object-cover"
-          />
-          <Image
-            src={image1}
-            alt="image1"
-            layout="responsive"
-            className=" rounded-lg object-cover"
-          />
-          <Image
-            src={image1}
-            alt="image1"
-            layout="responsive"
-            className=" rounded-lg object-cover"
-          />
-          <Image
-            src={image1}
-            alt="image1"
-            layout="responsive"
-            className=" rounded-lg object-cover"
-          />
+        <div className=" flex flex-col gap-10 p-10 lg:flex-row flex-wrap">
+          <div className=" basis-1/3 flex-1">
+            <Image
+              src={image1}
+              alt="image1"
+              layout="responsive"
+              className=" rounded-lg object-cover"
+            />
+          </div>
+          <div className=" basis-1/3 flex-1">
+            <Image
+              src={image1}
+              alt="image1"
+              layout="responsive"
+              className=" rounded-lg object-cover"
+            />
+          </div>
+          <div className=" basis-1/3 flex-1">
+            <Image
+              src={image1}
+              alt="image1"
+              layout="responsive"
+              className=" rounded-lg object-cover"
+            />
+          </div>
+          <div className=" basis-1/3 flex-1">
+            <Image
+              src={image1}
+              alt="image1"
+              layout="responsive"
+              className=" rounded-lg object-cover"
+            />
+          </div>
+          <div className=" basis-1/3 flex-1">
+            <Image
+              src={image1}
+              alt="image1"
+              layout="responsive"
+              className=" rounded-lg object-cover"
+            />
+          </div>
+          <div className=" basis-1/3 flex-1">
+            <Image
+              src={image1}
+              alt="image1"
+              layout="responsive"
+              className=" rounded-lg object-cover"
+            />
+          </div>
         </div>
       </section>
       {/* footer */}
-      <footer className=" border-t-2 border-black text-sm opacity-70 flex flex-col gap-5 items-center justify-center py-10">
+      <footer className=" border-t-2 border-black text-sm opacity-70 flex flex-col gap-5 items-center justify-center py-10 lg:flex-row lg:items-center">
         <div>
           <h3 className=" text-base mb-2">Contact me for more details</h3>
           <p className=" opacity-40">
