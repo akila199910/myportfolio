@@ -26,10 +26,12 @@ export default function Home() {
           </ul>
         </nav>
         {/* {this is hero part} */}
-        <div>
-          <h1>Akila Umayanga</h1>
-          <h3>Software Developer</h3>
-          <p>
+        <div className=" text-center p-10">
+          <h1 className=" text-5xl font-bold text-yellow-400">
+            Akila Umayanga
+          </h1>
+          <h3 className="text-2xl py-4">Software Developer</h3>
+          <p className=" text-sm py-4 text-gray-400 leading-6">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure fuga
             dolor dicta quos, optio sequi facilis sint explicabo neque
             architecto maxime incidunt ducimus quidem, mollitia tenetur
@@ -37,7 +39,7 @@ export default function Home() {
           </p>
         </div>
         {/* sosial */}
-        <div>
+        <div className=" text-5xl flex justify-center gap-16 text-gray-600">
           <a href="">
             <FaGithub />
           </a>
@@ -46,8 +48,13 @@ export default function Home() {
           </a>
         </div>
         {/* profile */}
-        <div>
-          <Image src={profileImage} alt="profile image" />
+        <div className=" m-auto relative bg-gradient-to-b from-yellow-200 w-80 h-80 p-5 mt-20 rounded-full">
+          <Image
+            src={profileImage}
+            alt="profile image"
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
       </section>
     </main>
