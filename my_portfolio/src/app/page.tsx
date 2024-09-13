@@ -176,6 +176,28 @@ export default function Home() {
           />
         </div>
       </section>
+      {/* footer */}
+      <footer className=" border-t-2 border-black text-sm opacity-70 flex flex-col gap-5 items-center justify-center py-10">
+        <div>
+          <h3 className=" text-base mb-2">Contact me for more details</h3>
+          <p className=" opacity-40">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            odit repellendus voluptatum, placeat veritatis expedita a amet,
+            accusamus praesentium veniam sunt obcaecati reiciendis unde maiores,
+            ullam repudiandae cupiditate! Iure, sequi!
+          </p>
+        </div>
+        <div>
+          <div className=" text-5xl flex justify-center gap-16 text-gray-600">
+            <a href="">
+              <FaGithub />
+            </a>
+            <a href="">
+              <CiLinkedin />
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
