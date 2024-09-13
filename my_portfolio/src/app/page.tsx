@@ -2,9 +2,13 @@ import { FaMoon } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import Image from "next/image";
+// {iamge}
 import profileImage from "./public/p2.png";
 import graphisDesign from "./public/design.png";
 import Code from "./public/code.png";
+import image1 from "./public/web1.png";
+import image2 from "./public/web2.png";
+import image3 from "./public/web3.png";
 
 export default function Home() {
   return (
@@ -120,6 +124,56 @@ export default function Home() {
               veritatis
             </p>
           </div>
+        </div>
+      </section>
+      {/* my work */}
+      <section>
+        <div>
+          <h2 className=" text-5xl py-10 font-bold opacity-60">Portfolio</h2>
+          <p className=" text-sm py-2 text-gray-400 leading-6">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure fuga
+            dolor dicta quos, optio sequi facilis sint explicabo neque
+            architecto maxime incidunt ducimus quidem, mollitia tenetur
+            distinctio. Repellat, quidem itaque.
+          </p>
+        </div>
+        <div className=" flex flex-col gap-10 p-10">
+          <Image
+            src={image1}
+            alt="image1"
+            layout="responsive"
+            className=" rounded-lg object-cover"
+          />
+          <Image
+            src={image1}
+            alt="image1"
+            layout="responsive"
+            className=" rounded-lg object-cover"
+          />
+          <Image
+            src={image1}
+            alt="image1"
+            layout="responsive"
+            className=" rounded-lg object-cover"
+          />
+          <Image
+            src={image1}
+            alt="image1"
+            layout="responsive"
+            className=" rounded-lg object-cover"
+          />
+          <Image
+            src={image1}
+            alt="image1"
+            layout="responsive"
+            className=" rounded-lg object-cover"
+          />
+          <Image
+            src={image1}
+            alt="image1"
+            layout="responsive"
+            className=" rounded-lg object-cover"
+          />
         </div>
       </section>
     </main>
