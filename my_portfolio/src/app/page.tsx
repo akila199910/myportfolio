@@ -3,6 +3,8 @@ import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import Image from "next/image";
 import profileImage from "./public/p2.png";
+import graphisDesign from "./public/design.png";
+import Code from "./public/code.png";
 
 export default function Home() {
   return (
@@ -55,6 +57,69 @@ export default function Home() {
             layout="fill"
             objectFit="cover"
           />
+        </div>
+      </section>
+      {/* services */}
+      <section>
+        <div>
+          <h2 className=" text-5xl py-10 font-bold opacity-60">
+            Services I Offer
+          </h2>
+          <p className=" text-sm py-2 text-gray-400 leading-6">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure fuga
+            dolor dicta quos, optio sequi facilis sint explicabo neque
+            architecto maxime incidunt ducimus quidem, mollitia tenetur
+            distinctio. Repellat, quidem itaque.
+          </p>
+        </div>
+        {/* services card */}
+        <div>
+          {/* card */}
+          <div className=" bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+            <Image
+              src={graphisDesign}
+              alt="graphs"
+              width={100}
+              height={100}
+              className=" inline"
+            />
+            <h2 className=" text-2xl font-bold">Graphic Designing</h2>
+            <p className=" text-sm py-2 text-gray-800 leading-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ut
+              molestias blanditiis, quo enim harum fuga animi. Ipsam odit
+              veritatis
+            </p>
+          </div>
+          <div className=" bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+            <Image
+              src={Code}
+              alt="graphs"
+              width={100}
+              height={100}
+              className=" inline"
+            />
+            <h2 className=" text-2xl font-bold">Graphic Designing</h2>
+            <p className=" text-sm py-2 text-gray-800 leading-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ut
+              molestias blanditiis, quo enim harum fuga animi. Ipsam odit
+              veritatis
+            </p>
+          </div>
+          <div className=" bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+            <Image
+              src={graphisDesign}
+              alt="graphs"
+              width={100}
+              height={100}
+              className=" inline"
+            />
+            <h2 className=" text-2xl font-bold">Graphic Designing</h2>
+            <p className=" text-sm py-2 text-gray-800 leading-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ut
+              molestias blanditiis, quo enim harum fuga animi. Ipsam odit
+              veritatis
+            </p>
+          </div>
         </div>
       </section>
     </main>
