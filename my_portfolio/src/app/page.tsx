@@ -36,7 +36,7 @@ export default function Home() {
               <li>
                 <FaMoon
                   onClick={() => setDarkmode(!darkMode)}
-                  className=" cursor-pointer text-xl mx-5"
+                  className=" cursor-pointer text-xl mx-5 dark:text-white"
                 />
               </li>
               <li>
